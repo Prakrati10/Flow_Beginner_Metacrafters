@@ -91,15 +91,14 @@ Area 03 (Functions): This area probably pertains to the functions or methods wit
 Area 04 (Script): Scripts typically represent executable code segments that control the program's behavior.
 ```
 
-Now, let's delve into the access modifiers:
+**Now, let's delve into the access modifiers:**
 
 pub(set): This modifier allows reading or writing of a variable from anywhere in the program, including all four areas (Struct, Resource, Functions, and Script).
 pub: With this modifier, the variable's value can be read from any area (Struct, Resource, Functions, and Script), but it can only be written from Area 01 (Struct).
 access(contract): Variables marked with this modifier can be read from Areas 01, 02, and 03, but they can only be written from Area 01 (Struct).
 access(self): Variables tagged with this modifier can be both read and written to only from Area 01 (Struct).
-```
 
-In summary:
+**In summary:**
 
 ```
 pub(set): Read and write from anywhere.
